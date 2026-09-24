@@ -66,74 +66,80 @@ export default function Home() {
           <div className="pointer-events-none absolute inset-x-0 top-0 h-56 bg-[radial-gradient(circle_at_top_left,_rgba(37,99,235,0.18),_transparent_32%),radial-gradient(circle_at_top_right,_rgba(6,182,212,0.12),_transparent_26%)]" />
           <div className="relative grid gap-10 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
             <div className="max-w-2xl space-y-8">
-            <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#06B6D4]">
-              Premium product delivery for modern teams
-            </p>
-            <h1 className="text-5xl font-semibold tracking-tight text-[#0F172A] sm:text-6xl">
-              Building digital products that are modern, dependable, and easy to
-              evolve.
-            </h1>
-            <p className="max-w-xl text-lg leading-8 text-[#475569]">
-              Noveltra Technologies designs, builds, and scales software
-              experiences with thoughtful engineering, clear collaboration, and
-              a focus on measurable outcomes.
-            </p>
-            <div className="flex flex-col gap-4 sm:flex-row">
-              <a
-                href="#contact"
-                className="inline-flex items-center justify-center rounded-full bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[#1D4ED8]"
-              >
-                Schedule a discovery call
-              </a>
-              <a
-                href="#services"
-                className="inline-flex items-center justify-center rounded-full border border-[#2563EB] px-6 py-3 text-sm font-semibold text-[#2563EB] transition duration-200 hover:bg-[#EFF6FF]"
-              >
-                View our services
-              </a>
+              <p className="text-sm font-semibold uppercase tracking-[0.3em] text-[#06B6D4]">
+                Premium product delivery for modern teams
+              </p>
+              <h1 className="text-5xl font-semibold tracking-tight text-[#0F172A] sm:text-6xl">
+                Building digital products that are modern, dependable, and easy
+                to evolve.
+              </h1>
+              <p className="max-w-xl text-lg leading-8 text-[#475569]">
+                Noveltra Technologies designs, builds, and scales software
+                experiences with thoughtful engineering, clear collaboration,
+                and a focus on measurable outcomes.
+              </p>
+              <div className="flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#contact"
+                  className="inline-flex items-center justify-center rounded-full bg-[#2563EB] px-6 py-3 text-sm font-semibold text-white transition duration-200 hover:bg-[#1D4ED8]"
+                >
+                  Schedule a discovery call
+                </a>
+                <a
+                  href="#services"
+                  className="inline-flex items-center justify-center rounded-full border border-[#2563EB] px-6 py-3 text-sm font-semibold text-[#2563EB] transition duration-200 hover:bg-[#EFF6FF]"
+                >
+                  View our services
+                </a>
+              </div>
+              <div className="grid gap-4 rounded-[1.5rem] border border-[#E5E7EB] bg-[#F8FAFC]/80 p-6 text-sm text-[#475569] shadow-sm sm:grid-cols-3">
+                {[
+                  {
+                    label: "Focus areas",
+                    value: "Product design, delivery, scalability",
+                  },
+                  {
+                    label: "Team style",
+                    value: "Collaborative, transparent, efficient",
+                  },
+                  { label: "Location", value: "Kochi, serving global teams" },
+                ].map((item) => (
+                  <div key={item.label}>
+                    <p className="font-semibold text-[#0F172A]">{item.label}</p>
+                    <p className="mt-2 text-[#475569]">{item.value}</p>
+                  </div>
+                ))}
+              </div>
             </div>
-            <div className="grid gap-4 rounded-[1.5rem] border border-[#E5E7EB] bg-[#F8FAFC]/80 p-6 text-sm text-[#475569] shadow-sm sm:grid-cols-3">
-              {[
-                { label: "Focus areas", value: "Product design, delivery, scalability" },
-                { label: "Team style", value: "Collaborative, transparent, efficient" },
-                { label: "Location", value: "Kochi, serving global teams" },
-              ].map((item) => (
-                <div key={item.label}>
-                  <p className="font-semibold text-[#0F172A]">{item.label}</p>
-                  <p className="mt-2 text-[#475569]">{item.value}</p>
-                </div>
-              ))}
-            </div>
-          </div>
 
-          <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm shadow-zinc-100">
-            <p className="text-sm font-semibold uppercase tracking-[0.26em] text-[#06B6D4]">
-              Featured project
-            </p>
-            <div className="mt-4 mb-6 inline-flex rounded-full bg-[#EFF6FF] px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#2563EB] shadow-sm">
-              Education • UX refresh
+            <div className="rounded-3xl border border-[#E5E7EB] bg-white p-8 shadow-sm shadow-zinc-100">
+              <p className="text-sm font-semibold uppercase tracking-[0.26em] text-[#06B6D4]">
+                Featured project
+              </p>
+              <div className="mt-4 mb-6 inline-flex rounded-full bg-[#EFF6FF] px-4 py-2 text-xs font-semibold uppercase tracking-[0.28em] text-[#2563EB] shadow-sm">
+                Education • UX refresh
+              </div>
+              <h2 className="mt-4 text-2xl font-semibold text-[#0F172A]">
+                KidzLadder
+              </h2>
+              <p className="mt-4 text-[#475569]">
+                A learning platform refresh designed to simplify curriculum
+                delivery, boost clarity for families, and support teachers with
+                better progress tracking.
+              </p>
+              <ul className="mt-6 space-y-3 text-sm text-[#475569]">
+                <li>• Responsive experience for web and mobile learners</li>
+                <li>• Clear content flow for parents and educators</li>
+                <li>• Scalable design system for future modules</li>
+              </ul>
+              <a
+                href="#portfolio"
+                className="mt-8 inline-flex items-center rounded-full bg-[#2563EB] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1D4ED8]"
+              >
+                Read the full case study
+              </a>
             </div>
-            <h2 className="mt-4 text-2xl font-semibold text-[#0F172A]">
-              KidzLadder
-            </h2>
-            <p className="mt-4 text-[#475569]">
-              A learning platform refresh designed to simplify curriculum
-              delivery, boost clarity for families, and support teachers with
-              better progress tracking.
-            </p>
-            <ul className="mt-6 space-y-3 text-sm text-[#475569]">
-              <li>• Responsive experience for web and mobile learners</li>
-              <li>• Clear content flow for parents and educators</li>
-              <li>• Scalable design system for future modules</li>
-            </ul>
-            <a
-              href="#portfolio"
-              className="mt-8 inline-flex items-center rounded-full bg-[#2563EB] px-5 py-3 text-sm font-semibold text-white transition hover:bg-[#1D4ED8]"
-            >
-              Read the full case study
-            </a>
           </div>
-        </div>
         </section>
 
         <section className="mt-20 grid gap-6 md:grid-cols-3">
@@ -302,9 +308,18 @@ export default function Home() {
               </div>
 
               <ul className="mt-8 space-y-3 text-zinc-600">
-                <li>• Simplified the onboarding flow to reduce setup friction for new users</li>
-                <li>• Improved task clarity for parents and teachers through clearer action cues</li>
-                <li>• Built a flexible foundation to support future learning modules and feature growth</li>
+                <li>
+                  • Simplified the onboarding flow to reduce setup friction for
+                  new users
+                </li>
+                <li>
+                  • Improved task clarity for parents and teachers through
+                  clearer action cues
+                </li>
+                <li>
+                  • Built a flexible foundation to support future learning
+                  modules and feature growth
+                </li>
               </ul>
             </article>
 
@@ -349,7 +364,9 @@ export default function Home() {
 
               <ul className="mt-8 space-y-3 text-zinc-600">
                 <li>• Centralized patient records and appointment workflows</li>
-                <li>• Reduced administrative handoff steps across departments</li>
+                <li>
+                  • Reduced administrative handoff steps across departments
+                </li>
                 <li>
                   • Prepared the system for future modules like inventory and
                   billing
