@@ -30,7 +30,15 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        {children}
+        <script
+          src="https://volgachat.com/v1/widget.js"
+          data-bot-id="hqcc945vyf87"
+          data-accent="#4F46E5"
+          defer
+        ></script>
+      </body>
     </html>
   );
 }
