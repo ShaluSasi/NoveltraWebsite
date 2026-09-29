@@ -19,6 +19,7 @@ export const metadata: Metadata = {
   verification: {
     other: {
       "chatframe-verification": "chatframe-verify-6f86bvkn78zjz6rcxk8c",
+      "volgachat-verification": "volgachat-verify-xcuwsctp5hvs6b4xfh6v",
     },
   },
 };
