@@ -26,6 +26,10 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <script
+          src="//code.tidio.co/spfmfbgel0qaddlfglqammndcbinmwag.js"
+          async
+        ></script>
       </body>
     </html>
   );
