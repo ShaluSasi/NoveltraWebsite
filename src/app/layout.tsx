@@ -16,6 +16,9 @@ export const metadata: Metadata = {
   title: "Noveltra Technologies",
   description:
     "Premium software delivery, product strategy, and digital product design for modern teams.",
+  other: {
+    "volgachat-verification": "volgachat-verify-u4pu92472k7bgjj5jtc4",
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
