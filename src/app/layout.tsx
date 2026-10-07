@@ -29,6 +29,11 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     >
       <body className="min-h-full flex flex-col">
         {children}
+        <script
+          src="https://volgachat.com/v1/widget.js"
+          data-bot-id="p6u2yucr82x4"
+          defer
+        ></script>
       </body>
     </html>
   );
